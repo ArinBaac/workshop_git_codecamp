@@ -2,24 +2,42 @@
 <header>
     <title>Pizza Form</title>
 </header>
+
 <body>
-    <table style="width: 30%;" border="1" align="center">
-    <tr><td colspan="2" align="center"><b>Pizza Shop 2.0 Team Top</b></td></tr>
-    <tr><td>Name</td> <td><input id="pizza_name" name="pizza_name" type="text" size="30"></td></tr>
-    <tr><td>Pizza Topping</td> <td><input id="radio1" name="radio" type="radio">Supreme
-    <br><input id="radio2" name="radio" type="radio">Vegetarian
-    <br><input id="radio3" name="radio" type="radio">Hawaiian</td>
-    </tr>
-    <tr><td>Pizza Sauce</td> 
-        <td><select name="select_sauce" id="select_sauce">
-        <option value="tomato">tomato</option>
-      </select></td></tr>
-    <tr><td>Optional Extras</td> 
-    <td><input id="chk_option1" name="chk_option1" type="checkbox">Extra Cheese
-        <input id="chk_option2" name="chk_option2" type="checkbox">Gluten Free Base
-    </td>   
-    </tr>  
-    <tr><td colspan="2">Delivery Instructions: <br> <textarea id="textarea" name="textarea" cols="50" rows="10"></textarea></td></tr>
-        <tr><td colspan="2"><input type="button" value="Send My Order"></td></tr>
-    </table>
+    <form id="pizza_form" name="pizza_form" action="#">
+        <table style="width: 30%;" border="1" align="center">
+            <tr>
+                <td colspan="2" align="center"><b>Pizza Shop 2.0 Team Top</b></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input id="pizza_name" name="pizza_name" type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td><input id="radio1" name="radio" type="radio">Supreme
+                    <br><input id="radio2" name="radio" type="radio">Vegetarian
+                    <br><input id="radio3" name="radio" type="radio">Hawaiian</td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td><select name="select_sauce" id="select_sauce">
+                        <option value="tomato">tomato</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td><input id="chk_option1" name="chk_option1" type="checkbox">Extra Cheese
+                    <input id="chk_option2" name="chk_option2" type="checkbox">Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instructions: <br> <textarea id="textarea" name="textarea" cols="50"
+                        rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Send My Order"></td>
+            </tr>
+        </table>
+    </form>
 </body>
