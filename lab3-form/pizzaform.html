@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<header>
+    <title>Pizza Form</title>
+</header>
+<body>
+    <table style="width: 100%;" border="1">
+    <tr><td colspan="2"><b>Pizza Shop 2.0</b></td></tr>
+    <tr><td>Name</td> <td><input id="pizza_name" name="pizza_name" type="text"></td></tr>
+    <tr><td>Pizza Topping</td> <td><input id="radio1" name="radio" type="radio"><p>Supreme</p>
+    <br><input id="radio2" name="radio" type="radio"><p>Vegetarian</p>
+    <br><input id="radio3" name="radio" type="radio"><p>Hawaiian</p></td>
+    </tr>
+    <tr><td>Pizza Sauce</td> 
+        <td><select name="select_sauce" id="select_sauce">
+        <option value="tomato">tomato</option>
+      </select></td></tr>
+    <tr><td>Optional Extras</td> 
+    <td><input id="chk_option1" name="chk_option1" type="checkbox"><p>Extra Cheese</p>
+        <input id="chk_option2" name="chk_option2" type="checkbox"><p>Gluten Free Base</p>
+    </td>   
+    </tr>  
+    <tr><td colspan="2">Delivery Instructions:<textarea id="textarea" name="textarea"></textarea></td></tr>
+        <tr><td><input type="button" value="Send My Order"></td></tr>
+    </table>
+</body>
