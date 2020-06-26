@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<header>
+    <title>Pizza Form</title>
+</header>
+
+<body>
+    <form id="pizza_form" name="pizza_form" action="#">
+        <table style="width: 30%;" border="1" align="center">
+            <tr>
+                <td colspan="2" align="center"><marquee direction="down"  height="100" behavior="alternate" style="border:solid">
+                    <marquee behavior="alternate">
+                        <b>Pizza Shop 2.0 Team Top</b>
+                    </marquee>
+                  </marquee></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><marquee behavior="alternate"><input id="pizza_name" name="pizza_name" type="text" size="30"></marquee></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td><marquee behavior="alternate"><input id="radio1" name="radio" type="radio">Supreme
+                    <br><input id="radio2" name="radio" type="radio">Vegetarian
+                    <br><input id="radio3" name="radio" type="radio">Hawaiian</marquee></td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td><marquee behavior="alternate"><select name="select_sauce" id="select_sauce">
+                        <option value="Tomato">tomato</option>
+                    </select></marquee></td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td><marquee behavior="alternate"><input id="chk_option1" name="chk_option1" type="checkbox">Extra Cheese
+                    <input id="chk_option2" name="chk_option2" type="checkbox">Gluten Free Base
+                </marquee>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instructions: <br> <marquee behavior="alternate"><textarea id="textarea" name="textarea" cols="40"
+                        rows="10"></textarea></marquee></td>
+            </tr>
+            <tr>
+                <td colspan="2"><marquee behavior="alternate"><input type="button" value="Send My Order"></marquee></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    //alert("asd;f");
+    /*
+    console.log("asdfla;skdfj;lksajdf");
+    */
+    let message = "Hello";
+    message = "World";
+    const foo = 'bar';
+    //const foo = 'asdf';
+    console.log(foo);
+
+   // let foo
+   // foo = 'bar'
+   // let 5codecamp;
+  // LAB1
+    let human;
+    let name = "Arin";
+    human = name;
+    console.log(human);
+    //LAB 2
+    let moneyInMyWallet;
+    let myDadAndMomName;
+    let myAddress;
+    let galaxyAge;
+    console.log(typeof galaxyAge);
+//Exsercise 1
+let name1 = "Codecamp";
+console.log(`hello ${1}`);
+console.log(`hello ${"name"}`);
+console.log(`hello ${name}`);
+//Exsercise 1
+let myName = "Arin";
+let myAge = "29";
+let myAddress2 = "600";
+let myHistory = `${myName}${myAge}${myAddress2}`;
+console.log(myHistory);
+
+//NaN
+let num_1 = Number(true);
+let num_2 = Number(false);
+console.log(""+1+0);
+console.log(""-1+0);
+console.log(true+false);
+console.log(6/"3");
+console.log("2"*"3");
+console.log(4+5+"px");
+console.log("$"+4+5);
+console.log("4"-2);
+console.log("4px"-2);
+console.log(7/0);
+console.log(" -9 "+5);
+console.log(" -9 "-5);
+console.log(null+1);
+console.log(undefined+1);
+console.log("\t\n"-2);
+
+//Condition
+/* let score = prompt('รับคะแนน');
+if(score >= 80){
+    alert('A');
+}else if(score >=70 && score <= 79){
+    alert('B');
+}else if(score >=60 && score <= 69){
+    alert('C');
+}else if(score >=50 && score <= 59){
+    alert('D');
+}else{
+    alert('F');
+} */
+
+//Ternary Operatiors
+ //let age = prompt('How old are you?');
+/*let price;
+if(age < 18) {
+    price = 2000;
+}else{
+    price = 3500;
+} */
+/* let price = age < 18 ? 2000 : 3500;
+alert(`Your price is: ${price}`); */
+
+/* console.log('Boolean null : '+Boolean(null));
+console.log('1 && 5 : '+1 && 5);
+console.log('1 && -1 : '+1 && -1);
+console.log('Boolean NaN : '+Boolean(NaN));
+console.log('null || 2 || undefined : '+null || 2 || undefined);
+console.log('alert(1) || 2 || alert(3) : '+""+alert(1) || 2 || alert(3));
+console.log('1 && null && 2 : '+""+1 && null && 2);
+console.log('alert(1) && alert(2)  : '+""+alert(1) && alert(2) );
+console.log('null || 2 && 3 || 4  : '+""+null || 2 && 3 || 4); */
+
+
+/* let check_age = prompt('เช็คอายุ');
+if(check_age >=18 && check_age <= 60){
+    alert('ช่วง 18-60 ');
+}else if(check_age < 18 || check_age > 60){
+    alert('ไม่อยู่ในช่วง 18-60');
+} */
+
+//Exercise  2.5
+/* for(let i=0; i<=10; i++){
+    if(i==2 || i==10){
+        alert(i);
+    }
+}
+
+for(let i=0; i<3; i++){
+alert(`number ${i}!`);
+}
+let i = -1;
+while(i++ <= 1 ){
+    alert(`number while loop : ${i}!`);
+} */
+//Guess number 0-100
+/* let num1 = 0;
+let num2 = null;
+
+num1 = parseInt(prompt("คนที่ 1 ใส่เลขเริ่มต้น 0-100 "));
+console.log(`เก็บค่าแรก ${num1}`);
+while(num1 < 0 || num1 >100 || !Number.isInteger(num1)){
+    num1 = parseInt(prompt("กรอก 0-100 เท่านั้น!!"));
+}
+num2 = parseInt(prompt("คนที่ 2 ใส่เลขที่จะทาย"));
+while(num2 < 0 || num2 >100 || !Number.isInteger(num2)){
+    num2 = parseInt(prompt("กรอก 0-100 เท่านั้น!!"));
+}
+while(num1 !== num2){
+    if(num2 > num1){
+        num2 = prompt(" > กรอกตัวเลขใหม่")
+    }else{
+        num2 = prompt(" < กรอกตัวเลขใหม่")
+    }
+    
+}
+alert(`เลขคนที่ 1 คือ ${num1}`); */
+
+/* let a = +prompt('a?', '');
+ */
+/* if (a == 0) {
+  alert( 0 );
+}
+if (a == 1) {
+  alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+  alert( '2,3' );
+} */
+/* switch(a){
+    case 0 :
+    alert(0);
+    break;
+    case 1 :
+    alert(1);
+    break;
+    case 2 :
+    case 3 :
+    alert('2,3');
+    break;
+} */
+
+/* function draw(n){
+    let output = '';
+for(i = 0; i < n; i++){
+    output += '*';
+}
+console.log(output);
+}
+
+let n = +prompt('draw * ', '');
+draw(n); */
+
+/* function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+function showOk() {
+  alert( "You agreed." );
+}
+function showCancel() {
+  alert( "You canceled the execution." );
+}
+// usage: functions showOk, showCancel are passed as arguments to ask
+ask("Do you agree?", showOk, showCancel);
+ */
+/* 
+let ask = (question, yes, no) => {
+    if (confirm(question)) yes()
+  else no();
+} */
+
+
+/* ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+); */
+
+/* let obj = {};
+while(true){
+    
+    let key = prompt("Input Key", "number");
+if(key === "stop") break;
+let value =  prompt("Input Value", "1");
+
+obj[key] = value;
+}
+
+
+console.log(obj); */
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+/* 
+function multiplyNumeric(obj, times){
+    for (let key in obj) {
+        if(typeof obj[key] === "number"){
+            obj[key] = obj[key] * times;
+        }
+       
+    }
+    return obj;
+}
+
+let result = multiplyNumeric(menu, 2);
+console.log(result) */
+
+/*let user = {
+  name: "John",
+  go: function() { alert(this.name) }
+}
+
+user.go(); */
+
+/* function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+};
+
+let user = makeUser();
+
+console.log( user.ref );  */
+
+/* let calculator = {
+    x : 0,
+    y : 0,
+    z : 0,
+  read() {
+       this.x = prompt("Input X");
+       this.y = prompt("Input Y");
+  },
+  sum(x, y){
+     this.z = Number(this.x) + Number(this.y);
+      return this.z
+  },
+  mul(x, y){
+    this.z = Number(this.x) * Number(this.y);
+      return this.z 
+  }
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() ); */
+// Lab2
+let random = (min, max) =>{
+    return Math.random() * (max - min) + min;
+};
+console.log(random(1,5));
+
+let ucFirst = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}   
+console.log(ucFirst("arin"));
+// Lab 3
+let checkSpam = (string) =>{
+    
+    let checkWord = ['xxx', 'viagra'];
+    for(i = 0; i <= checkWord.length; i++){
+        if(string.includes(checkWord[i])){
+            return true;
+        }
+    }
+    return false;
+   // return checkWord.indexOf(string);
+}
+console.log(checkSpam("asdfsal;dfkjxxviagra"));
+
+let extractCurrencyValue = (value, rate) => {
+    for (let char of value){
+        if(isNaN (char))
+        console.log(char);
+    }
+}
+//Array 1
+/* let fruits = ["Apples", "Pear", "Orange"];
+
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+console.log( fruits.length ); // ? */
+//Array 2
+/* let styles = ["Jazz", "Blues", "A", "B"];
+
+styles.push("Rock-n-Roll");
+let mid = Math.round(styles.length/2) - 1;
+styles[mid] = "Classics";
+console.log(styles[mid]);
+console.log( styles ); // ? */
+//Array 3
+/* 
+let number = 0;
+let arr = new Array();
+while(true){
+     number = prompt();
+    if(isNaN(number)) break;
+    arr.push(number);
+}
+let sum = 0;
+for (element of arr){
+    sum += Number(element);
+}
+console.log(sum);
+*/
+function unique(arr) {
+ let set = new Set(arr);
+ return set;
+} 
+
+let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O" ];
+let sets = unique(values);
+for(let value of sets){
+console.log( unique(values) ); // Hare, Krishna, :-O
+}
+
+//KEY 
+let map = new Map();
+
+map.set("name", "John");
+
+let keys = map.keys();
+console.log( typeof keys );
+// Error: keys.push is not a function
+//keys.push("more");
+
+</script>

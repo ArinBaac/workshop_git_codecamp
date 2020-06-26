@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<script>
+//2.6 132
+let array1 = [
+      { name: "apple", age: 14 },
+      { name: "banana", age: 18 },
+      { name: "watermelon", age: 32 },
+      { name: "pineapple", age: 16 },
+      { name: "peach", age: 24 },
+    ]
+/* let array2 = [
+      { name: "apple", age: 14 },
+      { name: "banana", age: 18 },
+      { name: "pineapple", age: 16 },
+      { name: "peach", age: 24 },
+    ] // filter ไม่เอาคนที่อายุ 32 */
+
+
+// ค้นหาตัวที่ age น้อยกว่า 32
+// ผลลัพธ์ที่ได้จะเก็บไว้ใน array2
+let array2_6 = array1.filter(item => item.age < 32);
+
+console.log(array2_6); 
+
+//2.7 133
+ array1 = [1, -3, 2, 8, -4, 5]
+    // array2 = [1, 2, 8, 5] // filter เลขบวก
+    let array2_7 = array1.filter(item => item >0);
+    console.log(array2_7); 
+//2.8 133
+array1 = [1,3,4,5,6,7,8]
+     //array2 = [3, 6] // filter เลขหาร 3 ลงตัว
+     let array2_8 = array1.filter(item => item %3 == 0);
+     console.log(array2_8); 
+//2.9 133
+array1 = ["peach", 1, -3, "2", {}, []]
+     //array2 ["peach", "2"] // filter string
+     let array2_9 = array1.filter(item => typeof item === 'string' );
+     console.log(array2_9); 
+//2.10 133
+array1 = ["APPLE", "appLE", "PEACH", "PEach"]
+     //array2 = ["APPLE", "PEACH"] // filter คำที่เป็นอักษรใหญ่ทุกตัว
+     let array2_10 = array1.filter(item => item == item.toUpperCase() );
+     console.log(array2_10); 
+
+</script>
