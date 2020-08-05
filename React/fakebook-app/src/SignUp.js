@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Laink
+  Link
 } from "react-router-dom";
 import { DatePicker } from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
@@ -15,7 +15,7 @@ import { Layout, Menu, Breadcrumb } from 'antd';
 import { Row, Col } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
-function Login() {
+function Signup() {
     return (
         <Layout>
             {/* <Header>Header</Header> */}
@@ -65,5 +65,5 @@ function Login() {
   }
   
   
-  export default Login;
+  export default Signup;
   
